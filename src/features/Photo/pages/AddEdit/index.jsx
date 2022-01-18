@@ -1,6 +1,6 @@
+import Banner from "components/Banner";
+import PhotoFom from "features/Photo/components/PhotoForm";
 import React from "react";
-import Banner from "../../../../components/Banner";
-import PhotoFom from "../../components/PhotoForm";
 import "./style.scss";
 
 function AddEditPage(props) {

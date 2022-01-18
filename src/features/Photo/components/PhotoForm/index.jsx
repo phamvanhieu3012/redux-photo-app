@@ -1,9 +1,9 @@
 import React from "react";
 import PropTypes from "prop-types";
 import { Button, Form, FormGroup, Input, Label } from "reactstrap";
-import Images from "../../../../constants/images.js";
 import Select from "react-select";
-import { PHOTO_CATEGORY_OPTIONS } from "../../../../constants/global.js";
+import { PHOTO_CATEGORY_OPTIONS } from "constants/global.js";
+import Images from "constants/images";
 
 function PhotoFom(props) {
   return (
