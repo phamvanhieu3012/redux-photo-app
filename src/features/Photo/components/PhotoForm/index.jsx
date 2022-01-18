@@ -6,7 +6,6 @@ import Select from "react-select";
 import { PHOTO_CATEGORY_OPTIONS } from "../../../../constants/global.js";
 
 function PhotoFom(props) {
-  console.log(PHOTO_CATEGORY_OPTIONS);
   return (
     <Form>
       <FormGroup>
