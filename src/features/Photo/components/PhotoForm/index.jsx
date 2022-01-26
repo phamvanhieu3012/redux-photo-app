@@ -9,11 +9,7 @@ import RandomPhotoField from "custom-fields/RandomPhotoField";
 import * as Yup from "yup";
 
 function PhotoFom(props) {
-  const initialValues = {
-    title: "",
-    categoryId: null, //chua chon la null
-    photo: "",
-  };
+  const { initialValues, isAddMode } = props;
 
   const validationSchema = Yup.object().shape({
     title: Yup.string().required("This field is required"),
@@ -62,9 +58,9 @@ function PhotoFom(props) {
             />
 
             <FormGroup>
-              <Button type="submit" color="primary">
+              <Button type="submit" color={isAddMode ? "primary" : "success"}>
                 {isSubmitting && <Spinner size="sm" />}
-                Add to album
+                {isAddMode ? "Add to album" : "Update your photo"}
               </Button>
             </FormGroup>
           </Form>
